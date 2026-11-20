@@ -1,4 +1,5 @@
- 
+
+/* CONFIGURACIÓN GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -8,24 +9,26 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f5f0e8;
+  background: #f8f5ef;
   color: #51483e;
   line-height: 1.7;
 }
 
+/* ENCABEZADO */
 header {
-  background: #e8ddcd;
+  background: linear-gradient(120deg, #e5e8dc, #f1e5d7);
   padding: 25px 5%;
   text-align: center;
-  border-bottom: 1px solid #d4c4ae;
+  border-bottom: 1px solid #d8d2c5;
 }
 
 header h1 {
-  color: #685747;
+  color: #536454;
   font-size: 32px;
   margin-bottom: 18px;
 }
 
+/* MENÚ DE NAVEGACIÓN */
 nav {
   display: flex;
   justify-content: center;
@@ -38,25 +41,31 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #a47d58;
+  color: #a47759;
 }
 
+/* SECCIONES */
 section {
   padding: 65px 10%;
   text-align: center;
 }
 
+/* PORTADA PRINCIPAL */
 .hero {
-  background: linear-gradient(135deg, #e8ddcd, #f7f3ec);
-  padding: 110px 10%;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(185, 204, 177, 0.55), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(224, 190, 164, 0.55), transparent 35%),
+    linear-gradient(120deg, #e4e9df, #f5ecdf, #eadbca);
+  padding: 120px 10%;
 }
 
 .hero h2 {
   font-size: 42px;
-  color: #665342;
+  color: #536454;
   margin-bottom: 20px;
 }
 
@@ -66,6 +75,7 @@ section {
   font-size: 18px;
 }
 
+/* TÍTULOS */
 h2 {
   color: #705c49;
   font-size: 30px;
@@ -77,6 +87,7 @@ section > p {
   margin: 0 auto 20px;
 }
 
+/* TARJETAS */
 .tarjetas {
   display: flex;
   justify-content: center;
@@ -88,13 +99,19 @@ section > p {
 article {
   background: #fffdf9;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 18px;
   width: 280px;
-  box-shadow: 0 5px 18px rgba(80, 65, 45, 0.08);
+  box-shadow: 0 6px 20px rgba(80, 65, 45, 0.09);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(80, 65, 45, 0.14);
 }
 
 article h3 {
-  color: #80694f;
+  color: #66765f;
   margin-bottom: 12px;
 }
 
@@ -105,9 +122,10 @@ article a {
   font-weight: bold;
 }
 
+/* BOTONES */
 .boton {
   display: inline-block;
-  background: #94775a;
+  background: #71836d;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -116,29 +134,35 @@ article a {
   cursor: pointer;
   font-size: 15px;
   margin-top: 15px;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .boton:hover {
-  background: #70583f;
+  background: #566b53;
+  transform: translateY(-2px);
 }
 
+/* MENSAJES */
 #mensaje {
   margin-top: 20px;
   font-weight: bold;
-  color: #80694f;
+  color: #66765f;
 }
 
+/* CONTACTO */
 #contacto {
-  background: #e8ddcd;
+  background: linear-gradient(120deg, #e8e4d9, #f0e3d5);
 }
 
+/* PIE DE PÁGINA */
 footer {
-  background: #665747;
+  background: #536454;
   color: white;
   text-align: center;
   padding: 25px;
 }
 
+/* DISEÑO PARA CELULARES */
 @media (max-width: 700px) {
   header h1 {
     font-size: 25px;
@@ -150,6 +174,10 @@ footer {
 
   nav a {
     font-size: 13px;
+  }
+
+  .hero {
+    padding: 80px 6%;
   }
 
   .hero h2 {
