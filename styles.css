@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f0e8;
+  color: #51483e;
+  line-height: 1.7;
+}
+
+header {
+  background: #e8ddcd;
+  padding: 25px 5%;
+  text-align: center;
+  border-bottom: 1px solid #d4c4ae;
+}
+
+header h1 {
+  color: #685747;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+nav a {
+  color: #625443;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #a47d58;
+}
+
+section {
+  padding: 65px 10%;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e8ddcd, #f7f3ec);
+  padding: 110px 10%;
+}
+
+.hero h2 {
+  font-size: 42px;
+  color: #665342;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 28px;
+  font-size: 18px;
+}
+
+h2 {
+  color: #705c49;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section > p {
+  max-width: 850px;
+  margin: 0 auto 20px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+article {
+  background: #fffdf9;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 5px 18px rgba(80, 65, 45, 0.08);
+}
+
+article h3 {
+  color: #80694f;
+  margin-bottom: 12px;
+}
+
+article a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #8b6847;
+  font-weight: bold;
+}
+
+.boton {
+  display: inline-block;
+  background: #94775a;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.boton:hover {
+  background: #70583f;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #80694f;
+}
+
+#contacto {
+  background: #e8ddcd;
+}
+
+footer {
+  background: #665747;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 45px 6%;
+  }
+
+  article {
+    width: 100%;
+  }
+}
